@@ -38,7 +38,7 @@ class App extends Component {
     ) : (
       <div className="tc">
         <h1 className="f1">RoboFriends</h1>
-        <a href="https:github.com/MpChoudhary/robofriends">
+        <a href="https://github.com/MpChoudhary/robofriends">
           <i class="fab fa-github"></i>
         </a>
         <SearchBox searchChange={this.onSearchChange} />
