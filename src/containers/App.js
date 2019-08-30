@@ -6,6 +6,7 @@ import './App.css';
 
 class App extends Component {
   constructor() {
+    console.log('constructor');
     super();
     this.state = {
       robots: [],
@@ -14,6 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
+    console.log('componentDidMount');
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(users => {
@@ -26,6 +28,7 @@ class App extends Component {
   };
 
   render() {
+    console.log('render');
     const { robots, searchfield } = this.state;
     const filteredRobots = robots.filter(robot => {
       return robot.name.toLowerCase().includes(searchfield.toLowerCase());
